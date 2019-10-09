@@ -1,0 +1,57 @@
+body {
+    line-height: 1.5rem;
+    font-family: ‘Roboto’, sans-serif;
+    }
+
+#navbar {
+        border-right: solid;
+        border-left: solid;
+        border-color: #999;
+        position:fixed;      /*this is position fixed */
+        left:0;              /*This is position to the left, check later */
+        height:100%;
+        width:23%;
+        
+        }    
+#main-doc {
+    margin-left:25%;  /*margin left to NOT overlap with the nav that is now on the left */
+    padding:5px;
+}
+
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+#navbar {
+    overflow: hidden;
+  }
+  #navbar a {
+    float: left;
+    display: block;
+    color: hsl(261, 73%, 45%);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+  @media screen and (max-width: 900px) {
+    ul.navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.navbar li a {
+        float: left;
+        padding: 15px;
+    }
+    section {margin-left: 0;}
+}
+
